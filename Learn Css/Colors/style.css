@@ -1,0 +1,26 @@
+var{
+--black: #000000ff;
+--rich-black: #0c1821ff;
+--oxford-blue: #1b2a41ff;
+--charcoal: #324a5fff;
+--lavender-web: #ccc9dcff; }
+*{
+    border-radius: 10px;
+}
+body,var{
+    text-align: center;
+    color:white;
+    background-color:black;
+}
+h1{
+    color:white;
+    background-color:#0c1821ff;
+}
+h2{
+    background-color: #1b2a41ff ;
+}
+p{
+    background-color:#324a5fff ;
+}
+
+/* learn about color form Websit:- Coolors */
