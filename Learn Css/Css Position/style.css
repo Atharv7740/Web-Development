@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    height:500px;
+    width: 250px;
+    background-color: black;
+    position:sticky;
+    bottom:
+    
+
+}
+
+/* .box{
+    height: 100px;
+    width: 100px;
+}
+.red{
+    position: relative;
+    top:200px;
+    background-color: red;
+}
+.green{
+    background-color: green;
+    position:absolute;
+
+    bottom:100%;
+}
+.blue{
+    background-color: blue;
+    position:fixed;
+    top:80%;
+    right:0px
+} */
+
+nav{
+    height:100px;
+    background-color:aqua;
+    position:sticky;
+    top:0px;
+}
+main{
+    border:2px solid black;
+    width:400px;
+    padding:1rem;
+    margin:1rem;
+    position:absolute;
+    left:5rem;
+}
