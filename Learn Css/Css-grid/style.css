@@ -1,0 +1,29 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    margin:50px;
+    width:200px;
+    height:400px;
+    border:2px solid red;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    
+    
+}
+.box{
+    border:1px solid blue;
+}
+#box-1{
+    grid-column: 1/4;
+}
+#box-10{
+    grid-column:1/4;
+    margin:2px 0;
+
+}

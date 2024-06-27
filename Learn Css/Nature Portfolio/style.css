@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Bodoni Moda", serif;
+    font-size:1.2rem
+}
+.container{
+    min-height: 100vh;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:20px;
+    background: linear-gradient(to right, #56ab2f, #a8dc69);
+    
+
+}
+.text-section{
+    flex-basis: 30%;
+    
+  
+}
+.gallary{
+    flex-basis:50%;
+    display:grid;
+    gap:8px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 120px;
+}
+
+#heading{
+    text-align: center;
+    color:black;
+    font-size: 3rem;
+}
+#description{
+    text-align: center;
+    color:#eadedefa
+}
