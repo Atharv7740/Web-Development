@@ -1,0 +1,45 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:black;
+    --secondary-text-color:rgb(119, 113, 113);
+    --card-background-color:white;
+    --container-background-color:rgb(182, 239, 246);
+    --margin-box:30px;
+    --text-align:center;
+
+}
+.dark{
+    --primary-text-color:rgb(212, 208, 208);
+    --secondary-text-color:rgb(182, 161, 161);
+    --card-background-color:hwb(0 18% 81% / 0.737);
+    --container-background-color:rgb(12, 7, 7);
+
+}
+.container{
+    height:100vh;
+    background-color: var(--container-background-color);
+    padding:20px;
+    
+}
+.container h1{
+    text-align: var(--text-align);
+    color:var(--primary-text-color)
+}
+.box{
+    padding:30px;
+    background-color: var(--card-background-color);
+    margin:var(--margin-box);
+    border-radius:15px;
+}
+.box h2{
+    color:var(--primary-text-color);
+    margin-bottom: 10px;
+
+}
+.box p{
+    color:var(--secondary-text-color)
+}
