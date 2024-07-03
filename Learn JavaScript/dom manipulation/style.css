@@ -1,0 +1,33 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+:root{
+    --box-bgcolor:lightcyan;
+    --container-bgcolor:lightcoral;
+
+}
+
+.container{
+    color:darkorange;
+    background-color: var(--container-bgcolor);
+    border:2px solid black;
+    width:50vw;
+    height: 25vh;
+    padding:20px;
+    margin:30px auto;
+    display:flex;
+    gap:20px;
+    
+}
+.box{
+    color:darkblue;
+    background-color: lightcyan;
+    width:25vw;
+    border:2px solid;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
