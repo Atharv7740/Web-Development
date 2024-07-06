@@ -19,3 +19,4 @@ a.age=20;
 a.gender="Male";
 
 console.log(a);
+console.log(a.age);
