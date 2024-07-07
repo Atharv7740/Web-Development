@@ -8,15 +8,3 @@
 // console.log(arr);
 // Ques: 2
 
-var obj={
-    FirstName,
-    Gender,
-    Age
-}
-var a=new obj();
-a.FirstName="Atharv";
-a.age=20;
-a.gender="Male";
-
-console.log(a);
-console.log(a.age);
