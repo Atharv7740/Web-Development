@@ -52,18 +52,87 @@
 
 // function calback( passing function as a parameter inside fucntion )
 
-function calculate(a,b,operation){
-    const val= operation(a,b);
-    console.log(val);
-}
+// function calculate(a,b,operation){
+//     const val= operation(a,b);
+//     console.log(val);
+// }
 
-function sum(a,b){
-    return a+b;
+// function sum(a,b){
+//     return a+b;
 
-}
-
-calculate(1,2,sum);
+// }
 
 
+// calculate(1,2,sum);
 
+
+// // counter
+
+// let counter=30;
+
+// const countDown=setInterval(()=>{
+//     console.log(counter)
+//     counter--;
+//     if(counter<0){
+//         clearInterval(countDown);
+//     }
+// },1000);
+
+
+// Terminal clock
+
+
+// function timeFormat(unit){
+//     return unit<10?'0'+unit:unit;
+// }
+
+// function displayTime(){
+//     const now=new Date();
+//     const hours=timeFormat(now.getHours());
+//     const min=timeFormat(now.getMinutes());
+//     const sec=timeFormat(now.getSeconds());
+
+//     console.clear();
+//     console.log(`${hours}: ${min}: ${sec}`);
+// }
+
+// setInterval(displayTime,1000);
+
+
+
+// function timeFormat(unit){
+
+//     return unit<10? '0'+unit :unit;
+// }
+// function getTime(is24HoursFormat){
+//     console.clear();
+    
+//     const now=new Date();
+//     let hours=now.getHours();
+//     const min=timeFormat(now.getMinutes());
+//     const sec=timeFormat(now.getSeconds());
+
+//     let period='';
+
+//     if(!is24HoursFormat){
+//         period=hours<12?'AM':'PM';
+//         hours=hours%12;
+//         hours=hours?hours:12;
+//     }
+
+//     hours=timeFormat(hours);
+    
+
+//     console.log(`Time : ${hours}:${min}:${sec} ${period}`);
+
+// }
+
+
+// setInterval(()=>getTime(false),1000);
+let now =new  Date();
+console.log(now.getTime());
+console.log(now.getDay());
+console.log(now.getHours())
+console.log(now.getMinutes());
+console.log(now.getSeconds());
 
