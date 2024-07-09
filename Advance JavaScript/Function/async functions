@@ -1,0 +1,57 @@
+// const fs= require('fs');
+// function atharvReadFile(cb){
+//     fs.readFile("a.txt","utf-8",(err,data)=>{
+//         cb(data);
+//     });
+// }
+// function cb(data){
+// console.log(data);
+// }
+
+// atharvReadFile(cb);
+
+// function atharvReadFile(){
+//     console.log("Inside atharvReadFile function");
+//     return new Promise((resolve)=>{
+//         console.log("Inside Promise");
+//         console.log("before file Read");
+
+//         fs.readFile("a.txt", "utf-8",(err,data)=>{
+//             console.log("before Resolve");
+//             resolve(data);
+
+//         });
+//     })
+// }
+
+// function onDone(data){
+//     console.log(data);
+// }
+
+// atharvReadFile().then(onDone)
+
+const fs = require('fs');
+
+function atharvReadFile(cb) {
+    console.log("Starting to read file");
+
+    fs.readFile("a.txt", "utf-8", (err, data) => {
+        if (err) {
+            console.error("Error reading file:", err);
+            cb(null, err);
+        } else {
+            console.log("File read successfully");
+            cb(data, null);
+        }
+    });
+}
+
+function cb(data, err) {
+    if (err) {
+        console.error("Callback received an error:", err);
+    } else {
+        console.log("File content:", data);
+    }
+}
+
+atharvReadFile(cb);
