@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic button</title>
+</head>
+<body>
+
+    <button id="btn" onclick="counter()">Counter 0</button>
+
+    <script>
+        function counter(){
+            const element=document.getElementById("btn").innerHTML;
+            const value=element.split(" ")[1];
+            const newvalue=parseInt(value)+1;
+            document.getElementById("btn").innerHTML="Counter "+newvalue;
+
+        }
+    </script>
+    
+</body>
+</html>
